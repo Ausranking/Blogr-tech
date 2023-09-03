@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@layer base {
+    html {
+        @apply scroll-smooth dark:bg-slate-900 dark:text-text-white overflow-x-clip
+    }
+
+    li {
+        @apply cursor-pointer text-text-white text-sm
+    }
+    h2,h3 {
+        @apply text-headings-blue dark:text-text-white
+    }
+     p {
+        @apply text-v-d-g-b 
+     }
+
+    button {
+        @apply text-white text-sm font-semibold
+    }
+
+    #mob-active {
+        @apply bg-gradient-to-r from-v-light-header-gradient to-light-red text-text-white w-max m-auto my-6
+    }
+
+    #btn-learn-more {
+        background: transparent;
+        @apply hover:bg-red-400 hover:text-white ring-1 text-text-white ring-text-white
+    }
+
+}
