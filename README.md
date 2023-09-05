@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://blogr-tech-fsenwr1mk-austranking.vercel.app/)
+- Solution URL: [Add solution URL here](https://github.com/Ausranking/Blogr-tech.git)
+- Live Site URL: [Add live site URL here](https://blogr-tech.vercel.app/)
 
 ## My process
 
@@ -33,7 +33,8 @@ Users should be able to:
 
 ### What I learned
 
-Concept of React hooks, {useState}
+Concept of React hooks, {useState} 
+Js modules (Default and named exports)
 
 ### Continued development
 
