@@ -14,14 +14,14 @@ const Main = () => {
         <div className="flex-1 h-full">
           {editorBlog.map((item, index) => (
             <div key={index}>
-              <h3 className="text-center text-2xl p-6">{item.blogTitle}</h3>
-              <p className="text-md px-4 max-sm:text-center lg:text-lg">
+              <h3 className="text-center text-2xl p-4">{item.blogTitle}</h3>
+              <p className="text-md  max-sm:text-center lg:text-lg">
                 {item.blogDesc}
               </p>
             </div>
           ))}
         </div>
-        <div className=" h-full w-full object-cover">
+        <div className=" h-full w-full">
           <img
             src={editor}
             alt="editor illlustration"

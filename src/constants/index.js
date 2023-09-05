@@ -11,11 +11,11 @@ export const Navlinks = [
   },
   {
     label: "Company",
-    Dropdown: ["About", "Team", "Blog", "Careers"],
+    Dropdowns: ["About", "Team", "Blog", "Careers"],
   },
   {
     label: "Connect",
-    Dropdown: ["Contact", "Newsletter", "LinkedIn"],
+    Dropdowns: ["Contact", "Newsletter", "LinkedIn"],
   },
 ];
 

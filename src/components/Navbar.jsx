@@ -4,19 +4,41 @@ import { Logo } from "../components/index";
 import { Button } from "../components/index";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { PiCaretDownThin } from "react-icons/pi";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
     setNav(!nav);
   };
+
+  const toggleDropdown = () => setIsOpen(!isOpen);
 
   return (
     <nav className=" absolute top-0 p-6 w-screen h-max  flex justify-between items-center md:p-6 lg:px-24 ">
       <Logo />
       <ul className="w-auto flex space-x-5 max-md:hidden absolute left-[20%] font-semibold">
         {Navlinks.map((item, index) => (
-          <li key={index}>{item.label} ^ </li>
+          <li
+            key={index}
+            className="  gap-1 flex justify-between items-center"
+            onClick={toggleDropdown}
+          >
+            {item.label}
+            <div onClick={toggleDropdown}>
+              <PiCaretDownThin />
+            </div>
+            {isOpen && (
+              <div className="absolute top-10 min-w-[25%] left-0 mt-2 bg-transparent border rounded-md shadow-md">
+                <ul>
+                  {item.Dropdowns.map((dropdown) => (
+                    <li>{dropdown}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </li>
         ))}
       </ul>
       <div className="max-md:hidden flex space-x-10">
