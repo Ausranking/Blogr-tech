@@ -29,7 +29,7 @@ const Navbar = () => {
             <div onClick={toggleDropdown}>
               <PiCaretDownThin />
             </div>
-            {isOpen && (
+            {/* {isOpen && (
               <div className="absolute top-10 min-w-[25%] left-0 mt-2 bg-transparent border rounded-md shadow-md">
                 <ul>
                   {item.Dropdowns.map((dropdown) => (
@@ -37,7 +37,7 @@ const Navbar = () => {
                   ))}
                 </ul>
               </div>
-            )}
+            )} */}
           </li>
         ))}
       </ul>
