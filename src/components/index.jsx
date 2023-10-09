@@ -1,6 +1,7 @@
 import logo from "../assets/icons/logo.svg";
+import { Link } from "react-router-dom";
 
-export function Button({ text, id, onClick,  }) {
+export function Button({ text, id, onClick }) {
   return (
     <button
       id={id}
@@ -12,8 +13,12 @@ export function Button({ text, id, onClick,  }) {
   );
 }
 
-// I want an onClick event in a button that is rendered as a component defined props, is it good practice to add onClick as a props too? or is there a way to go about it ?
+// I want an onClick event in a button that is rendered as a component with defined props, is it good practice to add onClick as a props too? or is there a way to go about it ?
 
 export function Logo() {
-  return <img className="h-9 inline-block" src={logo} alt="Site-logo" />;
+  return (
+    <Link to="/">
+      <img className="h-9 block " src={logo} alt="Site-logo" />
+    </Link>
+  );
 }

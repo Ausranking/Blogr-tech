@@ -6,12 +6,12 @@ export default {
     extend: {
       colors: {
         "light-red-text": "hsl(356,100%,66%)",
-        "hover-red": "hsl()",
+        "hover-red": "hsl(355, 100%, 74%)",
         "headings-blue": "hsl(208, 49%, 24%)",
         "text-white": "hsl(0, 0%, 100%)",
         "blue-footer-text": "hsl(240, 2%, 79%)",
         "v-d-g-b": "hsl(207, 13%, 34%)",
-        "footer-bg": "hsl((240, 10%, 16%)",
+        "footer-bg": "hsl(240, 10%, 16%)",
         "v-light-header-gradient": "hsl(13, 100%, 72%)",
         "light-red": "hsl(353, 100%, 62%)",
         "bg-gradient-body": "hsl(237, 17%, 21%)",
@@ -24,5 +24,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

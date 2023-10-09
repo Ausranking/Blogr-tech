@@ -1,28 +1,16 @@
-import BlogSection from "./sections/BlogSection";
-import Footer from "./sections/Footer";
-import Header from "./sections/Header";
-import Main from "./sections/Main";
-import SmartPhoneSection from "./sections/SmartPhoneSection";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <section>
-        <Header />
-      </section>
-      <section>
-        <Main />
-      </section>
-      <section>
-        <SmartPhoneSection />
-      </section>
-      <section>
-        <Footer />
-      </section>
-      <section>
-        <BlogSection />
-      </section>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route index="/" element={<Home />}></Route>
+        <Route path="contact" element={<Contact/>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

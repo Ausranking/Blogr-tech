@@ -6,7 +6,7 @@ import { editor, bg_circle, laptop, phones } from "../assets/images";
 
 const Main = () => {
   return (
-    <main className="max-w-screen h-max">
+    <main className="max-w-screen h-max ">
       <h2 className=" text-center max-sm:text-2xl md:text-3xl  mb-4">
         Designed for the future
       </h2>

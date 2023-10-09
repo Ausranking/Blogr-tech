@@ -4,11 +4,13 @@ import { Button } from "../components";
 
 const Header = () => {
   return (
-    <header className="bg-gradient-to-br from-light-red/90 to-v-light-header-gradient z-10 rounded-bl-[17%] max-w-screen mb-[15%] lg:mb-[10%]">
+    <header className="z-0 bg-gradient-to-br from-light-red/90 to-v-light-header-gradient rounded-bl-[17%] max-w-screen mb-[15%] lg:mb-[10%]">
       <div className="w-full h-[85vh]">
         <img src={image} alt="" className="w-full h-full  object-cover" />
       </div>
-      <Navbar />
+      <div className="absolute top-0">
+        <Navbar />
+      </div>
       <section className={headerStyle()}>
         <div className="relative">
           <h1 className="m-auto text-2xl py-2 sm:text-5xl md:text-5xl text-text-white xl:text-6xl ">
@@ -18,7 +20,7 @@ const Header = () => {
             Grow your audience and build your online brand
           </p>
         </div>
-        <div className=" mt-2 lg:mt-4">
+        <div className=" mt-2 lg:mt-4 z-0">
           <Button text="Start For Free" />
           <Button id="btn-learn-more" text="Learn More" />
         </div>
@@ -29,4 +31,4 @@ const Header = () => {
 
 export default Header;
 const headerStyle = () =>
-  "absolute top-[25%] text-center w-full h-2/5 flex flex-col justify-center";
+  "absolute top-[25%] text-center w-full h-2/5 flex flex-col z-0 justify-center";

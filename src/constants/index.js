@@ -1,21 +1,93 @@
+import { AiFillGithub } from "react-icons/ai";
+import { FaAddressBook } from "react-icons/fa";
 export const Navlinks = [
   {
     label: "Product",
     Dropdowns: [
-      "Overview",
-      "Pricing",
-      "Marketplace",
-      "Features",
-      "Integrations",
+      {
+        item: {
+          tag: "Overview",
+          linkto: "https://twitter.com/ausranking",
+        },
+      },
+      {
+        item: {
+          tag: "Pricing",
+          linkto: "https://twitter.com/ausranking",
+        },
+      },
+      {
+        item: {
+          tag: "Marketplace",
+          linkto: "https://twitter.com/ausranking",
+        },
+      },
+      {
+        item: {
+          tag: "Features",
+          linkto: "https://twitter.com/ausranking",
+        },
+      },
+      {
+        item: {
+          tag: "Integrations",
+          linkto: "https://twitter.com/ausranking",
+        },
+      },
+    ],
+  },
+
+  {
+    label: "Company",
+    Dropdowns: [
+      {
+        item: {
+          tag: "About",
+          linkto: "https://twitter.com/ausranking",
+        },
+      },
+      {
+        item: {
+          tag: "Team",
+          linkto: "https://twitter.com/ausranking",
+        },
+      },
+      {
+        item: {
+          tag: "Blog",
+          linkto: "/contact",
+        },
+      },
+      {
+        item: {
+          tag: "Careers",
+          linkto: "/contact",
+        },
+      },
     ],
   },
   {
-    label: "Company",
-    Dropdowns: ["About", "Team", "Blog", "Careers"],
-  },
-  {
     label: "Connect",
-    Dropdowns: ["Contact", "Newsletter", "LinkedIn"],
+    Dropdowns: [
+      {
+        item: {
+          tag: "Contact",
+          linkto: "contact",
+        },
+      },
+      {
+        item: {
+          tag: "Newsletter ",
+          linkto: "/",
+        },
+      },
+      {
+        item: {
+          tag: "Linkedin",
+          linkto: "/",
+        },
+      },
+    ],
   },
 ];
 
@@ -42,5 +114,72 @@ export const blogLists = [
     blogTitle: "Powerful tooling",
     blogDesc:
       " Powerful tooling Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.",
+  },
+];
+
+export const footerLinks = [
+  {
+    label: "Product",
+    link: [
+      {
+        tag: "Overview",
+        linkto: "/",
+      },
+      {
+        tag: "Pricing",
+        linkto: "/",
+      },
+      {
+        tag: "Marketplace",
+        linkto: "/",
+      },
+      {
+        tag: "Features",
+        linkto: "/",
+      },
+      {
+        tag: "Integrations",
+        linkto: "/",
+      },
+    ],
+  },
+  {
+    label: "Company",
+    link: [
+      {
+        tag: "About",
+        linkto: "/",
+      },
+      {
+        tag: "Team",
+        linkto: "/",
+      },
+      {
+        tag: "Blog",
+        linkto: "/",
+      },
+      {
+        tag: "Careers",
+        linkto: "/",
+      },
+    ],
+  },
+
+  {
+    label: "Connect",
+    link: [
+      {
+        tag: "Contac me",
+        linkto: "#",
+      },
+      {
+        tag: "Github",
+        linkto: "contact",
+      },
+    ],
+  },
+  {
+    tag: "Linkedin",
+    linkto: "contact",
   },
 ];
